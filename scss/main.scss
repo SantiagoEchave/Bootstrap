@@ -1,8 +1,71 @@
 * {
-    background-color: pink;
+    outline: none;
+    margin: 0;
+    padding: 0;
 }
 body {
-    background-color: #dadada;
+    background-color: #504f4f;
+    font-family: sans-serif;
+    color: white;
     width: 100%;
-    height: 100%;
+}
+nav {
+    overflow: hidden;
+    height: 50px;
+    width: 100%;
+    background-color: #af9ff4;
+}
+h1 {
+    float: left;
+    padding: 0.5em;
+}
+button {
+    background: none;
+    border: none;
+    float: right;
+    display: none;
+    color: white;
+    font-size: 1.5em;
+    margin: 0.5em 0.5em 0 0;
+    cursor: pointer;
+    @media screen and (max-width: 980px){
+        display: block;
+    }
+} 
+ul {
+    float: right;
+    list-style: none;
+    padding: 0.5em;
+    //    clear: both;
+    text-align: center;
+    display: inline-block;
+    @media screen and (max-width: 980px) {
+        display: block;
+        position: absolute;
+        top: 55px;
+        background: #66b5bc;
+        max-width: 980px;
+        margin: 0 auto 0 0;
+        width: 97%;
+        li.loli {
+            display: block;
+            padding: .312em;
+            text-align: center;
+//            width: 100%;
+        }
+
+    }
+    li {
+        display: inline-block;
+        background-color: rgb(197, 187, 239);
+        border-radius: 0.3125em;
+        border: 1px solid #9e77b7;
+        a {
+            color: white;
+            text-decoration: none;
+            line-height: 28px;
+            padding: 5px;
+            margin: 0;
+        }
+    }
 }
